@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/firstName"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:text="@string/first_name"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintVertical_bias=".3"
+        />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:text="@string/last_name"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+
+        app:layout_constraintTop_toBottomOf="@id/firstName"
+        app:layout_constraintBottom_toTopOf="@id/email"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintVertical_bias=".3"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+
+        app:layout_constraintTop_toBottomOf="@id/lastName"
+        app:layout_constraintBottom_toTopOf="@id/email"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintVertical_bias=".3"
+        />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        />
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

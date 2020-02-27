@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CSCI412-Assignment3</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_remove">remove</string>
+    <string name="action_add">add</string>
+    <string name="button_add">ADD</string>
+    <string name="title">Enter Friend Information:</string>
+    <string name="first_name">first name</string>
+    <string name="last_name">last name</string>
+    <string name="email">email</string>
+    <string name="back">BACK</string>
+    <string name="not_found">No friend found with that email address</string>
+</resources>
